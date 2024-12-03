@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://catalog.csumb.edu/widget-api/widget-api.min.css">
+</head>
+<body>
+    <h1>Content Title</h1>
+    <!-- Where the content will end up. -->
+    <a href="#" class="acalog">Loading...</a>
+    <ul class="acalog"><li>Loading...</li></ul>
+    <div class="acalog">Loading...</div>
+
+    <!-- jQuery first, then our JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://catalog.csumb.edu/widget-api/widget-api.min.js"></script>
+    <script>
+    $(function() {
+        $('.acalog').acalogWidgetize({
+            gateway: 'http://catalog.csumb.edu'
+        });
+    });
+    </script>
+</body>
+</html>
